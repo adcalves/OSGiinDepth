@@ -1,0 +1,17 @@
+<project name="ch09" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <!-- Listing 9.1, 9.2, 9.3, 9.4 -->
+    <bundle-up name="jndi.client_1.0.0" />
+    
+    <!-- Listing 9.5, 9.6 -->
+    <bundle-up name="jndi.converter_1.0.0" />
+    
+    <!-- Listing 9.7 -->
+    <bundle-up name="jndi.launcher_1.0.0" />
+  </target>
+
+</project>

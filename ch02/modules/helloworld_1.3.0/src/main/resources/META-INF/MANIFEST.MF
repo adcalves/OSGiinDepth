@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: helloworld
+Bundle-Version: 1.3
+Export-Package: manning.osgi.helloworld;version=1.3.0
+
+
+
+

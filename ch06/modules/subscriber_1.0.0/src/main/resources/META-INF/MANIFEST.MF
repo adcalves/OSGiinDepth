@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: subscriber
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.subscriber.SubscriberActivator
+Import-Package: org.osgi.framework, org.osgi.service.event
+
+
+
+
+

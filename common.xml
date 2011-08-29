@@ -1,0 +1,54 @@
+<project name="common" basedir=".">
+  <macrodef name="bundle-up-with-cp">
+    <attribute name="name" />
+    <attribute name="dir" />
+    <attribute name="inc" />
+    <sequential>
+      <mkdir dir="modules/@{name}/target" />
+      <mkdir dir="dist" />
+
+      <javac destdir="modules/@{name}/target" srcdir="modules/@{name}/src/main/java" debug="true">
+        <classpath>
+          <fileset dir="@{dir}" includes="@{inc}" />
+          <fileset dir="../lib" includes="*.jar" />
+          <fileset dir="${osgi.install.dir}/bin" includes="*.jar" />
+          <fileset dir="${osgi.install.dir}/bundle" includes="*.jar" />
+        </classpath>
+      </javac>
+
+      <jar destfile="dist/@{name}.jar" basedir="modules/@{name}/target" manifest="modules/@{name}/src/main/resources/META-INF/MANIFEST.MF" />
+    </sequential>
+  </macrodef>
+
+  <macrodef name="bundle-up">
+    <attribute name="name" />
+    <sequential>
+      <mkdir dir="modules/@{name}/target" />
+      <mkdir dir="dist" />
+
+      <javac destdir="modules/@{name}/target" srcdir="modules/@{name}/src/main/java" debug="true">
+        <classpath>
+          <fileset dir="dist" includes="*.jar" />
+          <fileset dir="../lib" includes="*.jar" />
+          <fileset dir="${osgi.install.dir}/bin" includes="*.jar" />
+          <fileset dir="${osgi.install.dir}/bundle" includes="*.jar" />
+        </classpath>
+      </javac>
+
+      <jar destfile="dist/@{name}.jar" basedir="modules/@{name}/target" manifest="modules/@{name}/src/main/resources/META-INF/MANIFEST.MF" />
+    </sequential>
+  </macrodef>
+
+  <target name="clean">
+    <delete includeEmptyDirs="true">
+      <fileset dir="." includes="**/target/**,dist/*.jar,bin/**" />
+    </delete>
+  </target>
+
+  <!--<target name="install" depends="dist">
+    <copy todir="${osgi.install.dir}/bundle" overwrite="true">
+      <fileset dir="dist" includes="*.jar" />
+    </copy>
+  </target>-->
+
+</project>

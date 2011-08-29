@@ -1,0 +1,34 @@
+<project basedir="." default="dist">
+  <property file="../build.properties"/>
+  <import file="../common.xml"/>
+  
+  <target name="dist">
+    <!-- Listing 2.1 -->
+    <bundle-up name="helloworld" />
+    <bundle-up name="helloworld.client" />
+
+    <!-- Listing 2.3 -->
+    <bundle-up name="helloworld.client2" />
+    
+    <!-- Listing 2.4 -->
+    <bundle-up name="helloworld.introspector" />
+    
+    <!-- Section 2.2.2 -->
+    <bundle-up name="helloworld_1.1.0" />
+    <bundle-up-with-cp name="helloworld.anotherclient" dir="dist" inc="helloworld_1.1.0.jar" />
+        
+    <bundle-up name="helloworld_1.2.0" />
+    
+    <!-- Listing 2.5 -->
+    <bundle-up name="helloworld_1.3.0" />
+    
+    <!-- Listing 2.6, 2.7 -->
+    <bundle-up name="helloworld_1.4.0" />
+    <bundle-up-with-cp name="helloworld.impl_1.4.0" dir="dist" inc="helloworld_1.4.0.jar" />
+    
+    <!-- Listing 2.8 -->
+    <bundle-up name="helloworld.client_1.1.0" />
+
+  </target>
+  
+</project>

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: parent
+Bundle-Version: 2.0.0
+Export-Package: manning.osgi.parent;version=2.0.0
+
+

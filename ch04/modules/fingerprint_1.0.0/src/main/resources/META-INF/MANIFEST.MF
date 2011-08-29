@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: fingerprint
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.fingerprint.Activator
+Export-Package: manning.osgi.fingerprint;version=1.0.0
+
+

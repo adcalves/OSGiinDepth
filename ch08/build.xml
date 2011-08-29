@@ -1,0 +1,17 @@
+<project name="ch08" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <!-- Listing 8.1, 8.2, 8.3, 8.4, 8.5 -->
+    <bundle-up name="tx.client_1.0.0" />
+    
+    <!-- Listing 8.6, 8.7 -->
+    <bundle-up name="cmt.provider_1.0.0" />
+    
+    <!-- Listing 8.8, 8.9, 8.10 -->
+    <bundle-up name="cmt.client_1.0.0" />
+  </target>
+
+</project>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: helloworld.impl
+Bundle-Version: 1.4
+Import-Package: manning.osgi.helloworld;version=1.4.0,org.osgi.framework
+Bundle-Activator: manning.osgi.helloworld.impl.PrinterActivator 
+
+
+
+

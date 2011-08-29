@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="modules/child_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/client_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/fingerprint_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/sizechecker_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/auction.auctioneer.sealed.test_1.0.0/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ch03"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.springframework.spring-osgi-mock-1.2.0.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.springframework.spring-osgi-test-1.2.0.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.springframework.spring-test-2.5.6.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.springframework.spring-core-2.5.6.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.springframework.spring-context-2.5.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="modules/distributed.example_1.0.0/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/osgi.enterprise.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: auction.spi
+Bundle-Version: 1.0.0
+Import-Package: manning.osgi.auction;version=1.0.0
+Export-Package: manning.osgi.auction.spi;version=1.0.0
+
+

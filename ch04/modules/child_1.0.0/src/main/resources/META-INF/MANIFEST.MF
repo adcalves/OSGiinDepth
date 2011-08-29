@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: child
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.child.ChildBundleActivator
+Import-Package: manning.osgi.parent;version="[1,1]", org.osgi.framework;
+Export-Package: manning.osgi.child;version=1.0.0,manning.osgi.parent;version=1.0.0
+

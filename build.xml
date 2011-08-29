@@ -1,0 +1,15 @@
+<project basedir="." default="dist">
+
+  <target name="clean">
+    <subant target="clean" verbose="true">
+      <dirset dir="." includes="ch*" />
+    </subant>
+  </target>
+
+  <target name="dist">
+    <subant target="dist">
+      <dirset dir="." includes="ch*" />
+    </subant>
+  </target>
+
+</project>

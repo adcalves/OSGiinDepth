@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: manning.osgi.sizechecker
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.sizechecker.SizeCheckerExtender
+Import-Package: org.osgi.framework
+
+

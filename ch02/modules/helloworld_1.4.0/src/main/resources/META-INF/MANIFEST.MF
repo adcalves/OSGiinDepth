@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: helloworld
+Bundle-Version: 1.4
+Export-Package: manning.helloworld;version=1.4.0
+
+
+
+
+

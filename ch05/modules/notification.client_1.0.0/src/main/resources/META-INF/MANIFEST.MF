@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: notification.client
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.notification.client.NotificationConfiguringClient
+Import-Package: org.osgi.framework, org.osgi.service.cm;version=1.2,
+ org.osgi.service.metatype
+
+
+

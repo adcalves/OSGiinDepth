@@ -1,0 +1,12 @@
+<project name="ch05" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <bundle-up name="logreader_1.0.0" />
+    <bundle-up name="notification.broker_1.0.0" />
+    <bundle-up name="notification.client_1.0.0" />
+  </target>
+
+</project>

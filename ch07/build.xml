@@ -1,0 +1,17 @@
+<project name="ch07" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <!-- Listing 7.1, 7.2 -->
+    <bundle-up name="storagearea_1.0.0" />
+    
+    <!-- Listing 7.3 -->
+    <bundle-up name="datasource_1.0.0" />
+    
+    <!-- Listing 7.4, 7.5, 7.6 -->
+    <bundle-up name="jpa_1.0.0" />
+  </target>
+
+</project>

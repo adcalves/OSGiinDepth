@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: notification.broker
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.notification.impl.NotificationBrokerActivator
+Import-Package: org.osgi.framework, org.osgi.service.cm;version=1.2, 
+ org.osgi.service.metatype
+Export-Package: manning.osgi.notification
+
+
+

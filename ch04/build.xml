@@ -1,0 +1,24 @@
+<project name="ch04" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <!-- Listing 4.1 is located in misc dir -->
+    <!-- It does not compile as there is no official OSGi v4.3 impl as of yet -->
+
+    <bundle-up name="parent_1.0.0" />
+    <bundle-up name="parent_2.0.0" />
+    <bundle-up name="child_1.0.0" />
+    <bundle-up name="client_1.0.0" />
+    
+    <!-- Make sure you have built ch03 first -->
+    <bundle-up-with-cp name="auction.auctioneer.sealed.test_1.0.0" dir="../ch03/dist" inc="auction.api_1.0.0.jar,auction.spi_1.0.0.jar,auction.auctioneer.sealed_1.0.0.jar" />
+    
+    <bundle-up name="fingerprint_1.0.0" />
+    
+    <!-- FIXME Move to ch06? -->
+    <bundle-up name="sizechecker_1.0.0" />
+    
+  </target>
+</project>

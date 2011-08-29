@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: datasource
+Bundle-Version: 1.0.0
+Import-Package: javax.persistence,
+ javax.sql,
+ org.osgi.framework
+Bundle-Activator: manning.osgi.datasource.DataSourceActivator
+
+
+

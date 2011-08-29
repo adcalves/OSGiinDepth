@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: publisher
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.publisher.PublisherActivator
+Import-Package: org.osgi.framework, org.osgi.service.event
+
+
+
+
+

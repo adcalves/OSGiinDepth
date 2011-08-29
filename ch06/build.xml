@@ -1,0 +1,12 @@
+<project name="ch06" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <bundle-up name="publisher_1.0.0" />
+    <bundle-up name="subscriber_1.0.0" />
+    <bundle-up name="sizechecker_1.0.0" />
+  </target>
+
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="modules/storagearea_1.0.0/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.core"/>
+	<classpathentry kind="lib" path="com.springsource.javax.persistence-1.0.0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.compendium"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

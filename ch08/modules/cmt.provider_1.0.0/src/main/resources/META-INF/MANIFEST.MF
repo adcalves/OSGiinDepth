@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cmt.provider
+Bundle-Version: 1.0.0
+Export-Package: manning.osgi.cmt
+Import-Package: javax.transaction,
+ javax.transaction.xa,
+ javax.sql,
+ org.osgi.framework
+Bundle-Activator: manning.osgi.cmt.provider.TransactionExtenderActivator
+
+
+

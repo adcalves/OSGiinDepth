@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cmt.client
+Bundle-Version: 1.0.0
+Import-Package: javax.transaction,
+ javax.sql,
+ manning.osgi.cmt,
+ org.osgi.framework
+Bundle-Activator: manning.osgi.cmt.client.TransactionalAccount
+
+
+

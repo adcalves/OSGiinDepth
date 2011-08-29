@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: client
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.client.ClientBundleActivator
+Import-Package: org.osgi.framework, manning.osgi.parent;version=2.0.0, 
+ manning.osgi.child 
+
+

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: helloworld.client2
+Import-Package: manning.osgi.helloworld.client,
+ org.osgi.framework
+Bundle-Activator: manning.osgi.helloworld.client2.PrinterClientActivator2
+
+

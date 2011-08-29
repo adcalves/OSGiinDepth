@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: auction.buyer.http
+Bundle-Version: 1.0.0
+Import-Package: manning.osgi.auction;version=1.0.0,
+ org.osgi.framework,
+ javax.servlet,
+ org.osgi.service.http
+Bundle-Activator: manning.osgi.auction.buyer.http.BuyerServletActivator
+
+

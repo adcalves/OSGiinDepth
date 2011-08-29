@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: jpa
+Bundle-Version: 1.0.0
+Import-Package: javax.persistence,
+ org.osgi.framework
+Bundle-Activator: manning.osgi.jpa.JPAActivator
+
+
+

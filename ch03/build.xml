@@ -1,0 +1,16 @@
+<project name="ch03" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    <bundle-up name="auction.api_1.0.0" />
+    <bundle-up name="auction.spi_1.0.0" />
+    <bundle-up name="auction.core_1.0.0" />
+    <bundle-up name="auction.auctioneer.sealed_1.0.0" />
+    <bundle-up name="auction.auditor.sealed_1.0.0" />
+    <bundle-up name="auction.seller.simple_1.0.0" />
+    <bundle-up name="auction.buyer.http_1.0.0" />
+  </target>
+
+</project>
