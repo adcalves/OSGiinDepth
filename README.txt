@@ -1,3 +1,12 @@
+Introduction
+============
+
+http://www.manning.com/alves/alves_cover150.jpg
+
+OSGi is an emerging Java-based technology for developing modular enterprise applications that can grow and change easily without stopping them entirely. OSGi in Depth picks up where OSGi in Action leaves off, covering important enterprise OSGi services, such as management, configuration, event handling, and software component models. Along the way, the reader learns software engineering best practices that result in systems with flexibility, extensibility, and maintainability. This book also describes how a developer can custom-tailor the OSGi platform, which is in itself modular, by picking and choosing the appropriate services to create domain-specific application frameworks.
+
+This repository includes the source code and the appropriate build files for the book.
+
 Pre-requisitives
 ================
 
@@ -23,6 +32,5 @@ Under each chapter directory, you may invoke the following ANT tasks:
 
 - ant [dist]: builds all needed bundles for the book listings and places them under the directory 'dist'.
 
-- ant install: copies the bundles to the bundle directory in the OSGi framework implementation.
-
+Follow the instrunctions in the book to properly manage the bundles in the OSGi framework implementation of choosing.
 
