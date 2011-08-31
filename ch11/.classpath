@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="modules/blocker_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/mysystembundle_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/updater_1.0.0/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

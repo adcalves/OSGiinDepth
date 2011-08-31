@@ -1,4 +1,4 @@
-package manning.osgi.auction.core;
+package manning.osgi.auction.manager;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import manning.osgi.auction.Auction;
 import manning.osgi.auction.spi.Auctioneer;
 import manning.osgi.auction.spi.Auditor;
 
-public class CoreActivator implements BundleActivator, ServiceListener {
+public class AuctionManagerActivator implements BundleActivator, ServiceListener {
 
     private BundleContext bundleContext;
     private Map<ServiceReference, ServiceRegistration> registeredAuctions = 
@@ -61,6 +61,8 @@ public class CoreActivator implements BundleActivator, ServiceListener {
                 bundleContext.ungetService(serviceReference); 
                 break;
             }
+            default:
+                // do nothing
         }
     }
 

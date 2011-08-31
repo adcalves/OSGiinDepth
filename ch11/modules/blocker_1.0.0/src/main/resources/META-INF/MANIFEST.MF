@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: blocker
+Bundle-Version: 1.0.0
+Bundle-Activator: manning.osgi.blocker.BlockerActivator
+Import-Package: org.osgi.framework
+
+
+

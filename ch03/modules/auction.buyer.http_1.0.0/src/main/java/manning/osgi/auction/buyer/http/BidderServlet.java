@@ -64,11 +64,11 @@ public class BidderServlet implements Servlet, Participant {
         }
     } 
     
-    public void onAccepted(Auction auction, String item, Float price) {
+    public void onAcceptance(Auction auction, String item, float price) {
         writer.println(this.name + " was awarded " + item + " for " + price);
     }
 
-    public void onRejected(Auction auction, String item, Float bestBid) {
+    public void onRejection(Auction auction, String item, float bestBid) {
         writer.println("Bid for " + item + " from " + name + " was rejected");
     }
 }

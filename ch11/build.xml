@@ -1,0 +1,14 @@
+<project name="ch11" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    
+    <bundle-up name="blocker_1.0.0" />
+    <bundle-up name="mysystembundle_1.0.0" />
+    <bundle-up name="updater_1.0.0" />
+   
+  </target>
+
+</project>

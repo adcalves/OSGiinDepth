@@ -37,6 +37,8 @@ public class SellerActivator implements BundleActivator, ServiceListener {
                 ask(serviceEvent.getServiceReference());
                 break;
             }
+            default:
+                // do nothing
         }
     }
     

@@ -31,11 +31,11 @@ public class Seller implements Participant, Runnable {
         auction = null;
     }
 
-    public void onAccepted(Auction auction, String item, Float price) {
+    public void onAcceptance(Auction auction, String item, float price) {
         System.out.println(this.name + " sold " + item + " for " + price);
     }
 
-    public void onRejected(Auction auction, String item, Float bestBid) {
+    public void onRejection(Auction auction, String item, float bestBid) {
         System.out.println("No bidders accepted asked price for " + item + ", best bid was " + bestBid);
     }
 }

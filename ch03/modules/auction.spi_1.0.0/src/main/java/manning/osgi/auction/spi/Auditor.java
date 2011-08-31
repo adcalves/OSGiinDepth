@@ -4,12 +4,12 @@ import manning.osgi.auction.Participant;
 
 public interface Auditor {
     
-    void onAccepted(Auctioneer auctioneer, Participant participant, 
-            String item, Float ask, 
-            Float acceptedBid, Float [] bids);
+    void onAcceptance(Auctioneer auctioneer, Participant participant, 
+            String item, float ask, 
+            float acceptedBid, Float [] bids);
     
-    void onRejected(Auctioneer auctioneer, Participant participant, 
-            String item, Float ask, 
+    void onRejection(Auctioneer auctioneer, Participant participant, 
+            String item, float ask, 
             Float [] rejectedBids);
 
 }

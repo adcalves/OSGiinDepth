@@ -14,8 +14,8 @@ public interface Auction {
     
     // Service Methods
     
-    Float ask(String item, Float price, Participant seller) throws InvalidOfferException;
+    Float ask(String item, float price, Participant seller) throws InvalidOfferException;
     
-    Float bid(String item, Float price, Participant buyer) throws InvalidOfferException;
+    Float bid(String item, float price, Participant buyer) throws InvalidOfferException;
 
 }

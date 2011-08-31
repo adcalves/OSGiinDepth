@@ -29,11 +29,11 @@ public class BidderServer implements Runnable, Participant {
         this.auction = auction;
     }
     
-    public void onAccepted(Auction auction, String item, Float price) {
+    public void onAcceptance(Auction auction, String item, float price) {
         System.out.println(this.name + " was awarded " + item + " for " + price);
     }
 
-    public void onRejected(Auction auction, String item, Float bestBid) {
+    public void onRejection(Auction auction, String item, float bestBid) {
         System.out.println("Bid for " + item + " from " + name + " was rejected");
     }
     

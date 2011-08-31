@@ -4,8 +4,8 @@ public interface Participant {
     
     String getName();
     
-    void onAccepted(Auction auction, String item, Float price);
+    void onAcceptance(Auction auction, String item, float price);
 
-    void onRejected(Auction auction, String item, Float bestBid);
+    void onRejection(Auction auction, String item, float bestBid);
 
 }

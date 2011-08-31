@@ -7,14 +7,14 @@ import manning.osgi.auction.spi.Auditor;
 
 public class SealedFirstPriceAuditor implements Auditor {
     
-    public void onAccepted(Auctioneer auctioneer, Participant participant, 
-            String item, Float ask,
-            Float acceptedBid, Float[] bids) {
+    public void onAcceptance(Auctioneer auctioneer, Participant participant, 
+            String item, float ask,
+            float acceptedBid, Float[] bids) {
         verify(auctioneer, participant, bids);
     }
 
-    public void onRejected(Auctioneer auctioneer, Participant participant, 
-            String item, Float ask, Float[] rejectedBids) {
+    public void onRejection(Auctioneer auctioneer, Participant participant, 
+            String item, float ask, Float[] rejectedBids) {
         verify(auctioneer, participant, rejectedBids);
     }
 

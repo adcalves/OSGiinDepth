@@ -1,4 +1,4 @@
-package manning.osgi.auction.core;
+package manning.osgi.auction.manager;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ public class AuctionWrapper implements Auction {
     private Auctioneer delegate;
     private Map<String,List<Float>> bidsPerItem = 
         new HashMap<String,List<Float>>();
-    private Float ask;
+    private float ask;
     
     class ParticipantWrapper implements Participant {
 
@@ -25,23 +25,23 @@ public class AuctionWrapper implements Auction {
             return delegate.getName();
         }
 
-        public void onAccepted(Auction auction, String item, Float price) {
-            delegate.onAccepted(auction, item, price);
+        public void onAcceptance(Auction auction, String item, float price) {
+            delegate.onAcceptance(auction, item, price);
             
             Float [] bids = bidsPerItem.get(item).toArray(new Float [0]); 
             for (Auditor auditor : auditors) {
-                auditor.onAccepted(AuctionWrapper.this.delegate, delegate, 
+                auditor.onAcceptance(AuctionWrapper.this.delegate, delegate, 
                         item, ask, price, bids);
             }
         }
 
-        public void onRejected(Auction auction, String item, 
-                Float bestBid) {
-            delegate.onRejected(auction, item, bestBid);
+        public void onRejection(Auction auction, String item, 
+                float bestBid) {
+            delegate.onRejection(auction, item, bestBid);
 
             Float [] bids = bidsPerItem.get(item).toArray(new Float [0]);
             for (Auditor auditor : auditors) {
-                auditor.onRejected(AuctionWrapper.this.delegate, delegate, item, 
+                auditor.onRejection(AuctionWrapper.this.delegate, delegate, item, 
                         ask, bids);
             }
         }
@@ -52,14 +52,14 @@ public class AuctionWrapper implements Auction {
         this.auditors = auditors;
     }
 
-    public Float ask(String item, Float price, Participant seller)
+    public Float ask(String item, float price, Participant seller)
             throws InvalidOfferException {
         ask = price;
         return delegate.getAuction().ask(item, price, 
                 new ParticipantWrapper(seller));
     }
 
-    public Float bid(String item, Float price, Participant buyer)
+    public Float bid(String item, float price, Participant buyer)
             throws InvalidOfferException {
         List<Float> bids = bidsPerItem.get(item);
         if (bids == null) {

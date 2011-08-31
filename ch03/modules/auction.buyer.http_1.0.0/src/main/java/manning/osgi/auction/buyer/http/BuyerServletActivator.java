@@ -49,6 +49,8 @@ public class BuyerServletActivator implements BundleActivator, ServiceListener {
                     stop(bundleContext);
                     break;
                 }
+                default:
+                    // ignore other service events
             }
         } catch (Exception e) {
             e.printStackTrace();
