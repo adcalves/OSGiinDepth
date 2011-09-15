@@ -14,6 +14,7 @@ public class SubscriberActivator implements BundleActivator {
     public void start(BundleContext context) throws Exception {
         SimpleSubscriber subscriber = new SimpleSubscriber();
         
+        @SuppressWarnings("rawtypes")
         Dictionary dict = new Properties();
         dict.put(EventConstants.EVENT_TOPIC, "manning/osgi/login");
         dict.put(EventConstants.EVENT_FILTER, "(userid=alex)");

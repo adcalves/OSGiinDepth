@@ -14,7 +14,7 @@ public class LoginEventPublisher {
         this.admin = admin;
     }
     
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void sendLoginEvent(String userid) {
         Dictionary payload = new Properties();
         payload.put("userid", userid);
@@ -26,7 +26,7 @@ public class LoginEventPublisher {
         admin.postEvent(event);
     }
      
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void sendTravelEvent(String userid) {
         Dictionary payload = new Properties();
         payload.put("price", 80);

@@ -8,8 +8,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import org.osgi.framework.BundleActivator;
@@ -55,7 +53,7 @@ public class StorageAreaActivator implements BundleActivator {
         writer.close();
     }
 
-    @SuppressWarnings("rawtypes")
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     private Event retrieveData(BundleContext context)
             throws FileNotFoundException, IOException {
         File eventLog =

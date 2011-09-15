@@ -67,7 +67,7 @@ public class TransactionalAccount implements BundleActivator {
         stat2.execute("UPDATE account SET current = " + (currentB + amount) 
                 + " WHERE accountId = 002");
 
-        if (currentA - amount < 0)
+        if (currentA - amount < 0.0)
             ut.rollback();
 
         stat1.execute("UPDATE account SET current = " + (currentA - amount) 

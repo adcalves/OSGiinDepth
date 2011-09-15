@@ -140,7 +140,7 @@ public class NotificationBrokerActivator implements BundleActivator,
             }};
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("rawtypes")
     public void updated(Dictionary configuration) throws ConfigurationException {
         if (configuration != null) {
             Integer port = 
@@ -167,7 +167,7 @@ public class NotificationBrokerActivator implements BundleActivator,
         }
     }
     
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     private void updateBrokerService(int port) {
         broker = new NotificationBrokerImpl(port);
         

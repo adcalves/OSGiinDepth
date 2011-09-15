@@ -42,7 +42,7 @@ public class NotificationBrokerFactoryActivator
         );         
     } 
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("rawtypes")
     public synchronized void updated(String pid, Dictionary configuration)
     throws ConfigurationException {
         Integer port = 
@@ -65,7 +65,7 @@ public class NotificationBrokerFactoryActivator
         stopBrokerService(pid);
     }
     
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     private void startBrokerService(String pid, int port) {
         NotificationBrokerImpl broker = new NotificationBrokerImpl(port);
         

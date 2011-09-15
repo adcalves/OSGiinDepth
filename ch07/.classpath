@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="modules/storagearea_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/datasource_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/jpa_1.0.0/src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.core"/>
-	<classpathentry kind="lib" path="com.springsource.javax.persistence-1.0.0.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.compendium"/>
+	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/javax.persistence_2.0.3.v201010191057.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/osgi.enterprise.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

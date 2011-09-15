@@ -26,15 +26,32 @@ public class JPAActivator implements BundleActivator {
 
             EntityManager em = emf.createEntityManager();
 
-            em.getTransaction().begin();
-
-            em.persist(loginEvent);
-
-            em.getTransaction().commit();
+            persistLoginEvent(em, loginEvent);
+            
+            loginEvent = retrieveLoginEvent(em, loginEvent.getId());
 
             em.close();
             emf.close();
         }
+        
+    }
+
+    private void persistLoginEvent(EntityManager em, LoginEvent loginEvent) {
+        em.getTransaction().begin();
+
+        em.persist(loginEvent);
+
+        em.getTransaction().commit();
+    }
+    
+    private LoginEvent retrieveLoginEvent(EntityManager em, int id) {
+        em.getTransaction().begin();
+
+        LoginEvent loginEvent = em.find(LoginEvent.class, id);
+
+        em.getTransaction().commit();
+        
+        return loginEvent;
     }
 
     public void stop(BundleContext context) throws Exception {
