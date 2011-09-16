@@ -6,7 +6,7 @@
   <target name="dist">
     <bundle-up name="auction.api_1.0.0" />
     <bundle-up name="auction.spi_1.0.0" />
-    <bundle-up name="auction.core_1.0.0" />
+    <bundle-up name="auction.manager_1.0.0" />
     <bundle-up name="auction.auctioneer.sealed_1.0.0" />
     <bundle-up name="auction.auditor.sealed_1.0.0" />
     <bundle-up name="auction.seller.simple_1.0.0" />

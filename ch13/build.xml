@@ -1,0 +1,20 @@
+<project name="ch11" basedir="." default="dist">
+
+  <property file="../build.properties" />
+  <import file="../common.xml" />
+
+  <target name="dist">
+    
+    <bundle-up name="sab_1.0.0" />
+    
+    <bundle-up name="sab.client_1.0.0" />
+      
+    <bundle-up name="sab_2.0.0" />
+      
+    <bundle-up name="sab.client_2.0.0" />
+    
+    <bundle-up-with-cp name="auction.auctioneer.sealed_2.0.0" dir="../ch03/dist" inc="auction.api_1.0.0.jar,auction.spi_1.0.0.jar" />
+
+  </target>
+
+</project>

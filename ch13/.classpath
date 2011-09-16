@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="modules/sab_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/sab.client_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/sab_2.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/auction.auctioneer.sealed_2.0.0/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/org.apache.aries.blueprint-0.2-incubating.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/javax.transaction-1.0.0.0_1-1.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/osgi.enterprise.jar"/>
+	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/javax.persistence_2.0.3.v201010191057.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ch03"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

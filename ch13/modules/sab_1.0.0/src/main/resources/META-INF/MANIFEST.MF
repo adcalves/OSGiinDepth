@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: manning.osgi.sab
+Bundle-Description: SAB implementation
+Bundle-Version: 1.0.0
+Import-Package: org.osgi.service.event;org.osgi.framework
+
+
+
+
+
+
+
+
+

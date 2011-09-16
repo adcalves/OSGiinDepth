@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="modules/auction.api_1.0.0/src/main/java"/>
-	<classpathentry kind="src" path="modules/auction.auctioneer.sealed_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/auction.auditor.sealed_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/auction.buyer.http_1.0.0/src/main/java"/>
-	<classpathentry kind="src" path="modules/auction.core_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/auction.seller.simple_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/auction.spi_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/auction.manager_1.0.0/src/main/java"/>
+	<classpathentry kind="src" path="modules/auction.auctioneer.sealed_1.0.0/src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
 	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/javax.servlet-1.0.0.0_2-5.jar"/>

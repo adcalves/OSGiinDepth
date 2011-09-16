@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: SimpleEventHandler
+Bundle-Description: SAB for a simple event handler
+Bundle-Version: 1.0.0
+Meta-Subscriber:    
+ manning.osgi.SimpleEventHandler;org/osgi/framework/BundleEvent/*
+Import-Package: org.osgi.service.event
+

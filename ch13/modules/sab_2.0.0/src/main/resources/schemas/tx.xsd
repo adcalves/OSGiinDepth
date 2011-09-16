@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://www.manning.com/xmlns/blueprint-tx/v1.0.0" 
+	targetNamespace="http://www.manning.com/xmlns/blueprint-tx/v1.0.0"
+	xmlns:osgi="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xsi:schemaLocation="
+		http://www.osgi.org/xmlns/blueprint/v1.0.0 
+		http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd" >
+	
+	<element name="transaction">
+		<complexType>
+			<attribute name="method" type="string"/>
+		</complexType>
+	</element>
+</schema>
+
+
+
