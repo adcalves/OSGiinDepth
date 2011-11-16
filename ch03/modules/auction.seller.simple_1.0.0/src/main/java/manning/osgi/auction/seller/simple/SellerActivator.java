@@ -1,6 +1,7 @@
 package manning.osgi.auction.seller.simple;
 
 import org.osgi.framework.*;
+import org.osgi.util.tracker.ServiceTracker;
 
 import manning.osgi.auction.Auction;
 
@@ -26,6 +27,24 @@ public class SellerActivator implements BundleActivator, ServiceListener {
             bundleContext.addServiceListener(this, filter);
         }
     }
+    
+    public Auction usingAServiceTracker(BundleContext bundleContext) 
+     throws InterruptedException 
+    {
+        String filter = 
+            "(&(objectClass=" + Auction.class.getName() 
+            + ")(" + Auction.TYPE + "=Sealed-First-Price))";
+        
+        ServiceTracker tracker = 
+            new ServiceTracker(bundleContext, filter, null);
+
+        tracker.open();
+        
+        Auction auction = (Auction) tracker.waitForService(0);
+        
+        return auction;
+    }
+    
 
     public void stop(BundleContext bundleContext) throws Exception {
         bundleContext.removeServiceListener(this);

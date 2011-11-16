@@ -3,8 +3,6 @@
 	<classpathentry kind="src" path="modules/cmt.client_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/tx.client_1.0.0/src/main/java"/>
 	<classpathentry kind="src" path="modules/cmt.provider_1.0.0/src/main/java"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.core"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.osgi.compendium"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="FELIX_HOME/bin/felix.jar"/>
 	<classpathentry kind="var" path="OSGI_IN_DEPTH_HOME/lib/osgi.enterprise.jar"/>
