@@ -25,7 +25,7 @@ public class DataSourceActivator implements BundleActivator {
     private void persistUsingDataSource(BundleContext bundleContext) throws SQLException, InvalidSyntaxException {
         ServiceReference [] serviceReferences =
             bundleContext.getServiceReferences(
-                    DataSourceFactory.class.toString(), 
+                    DataSourceFactory.class.getName(), 
                     "(" + DataSourceFactory.OSGI_JDBC_DRIVER_CLASS +
             "=org.apache.derby.jdbc.EmbeddedDriver)");
 

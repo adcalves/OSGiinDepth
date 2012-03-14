@@ -30,7 +30,7 @@ public class LocalAndGlobalTransactionActivator implements BundleActivator{
     public void start(BundleContext bundleContext) throws Exception {
         ServiceReference [] serviceReferences =
             bundleContext.getServiceReferences(
-                    DataSourceFactory.class.toString(), 
+                    DataSourceFactory.class.getName(), 
                     "(" + DataSourceFactory.OSGI_JDBC_DRIVER_CLASS +
             "=org.apache.derby.jdbc.EmbeddedDriver)");
         

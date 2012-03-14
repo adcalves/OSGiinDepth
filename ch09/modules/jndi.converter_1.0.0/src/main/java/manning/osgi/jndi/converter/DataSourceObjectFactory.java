@@ -25,7 +25,7 @@ public class DataSourceObjectFactory implements BundleActivator, ObjectFactory {
 
         retrieveLogService();
 
-        bundleContext.registerService(ObjectFactory.class.toString(), 
+        bundleContext.registerService(ObjectFactory.class.getName(), 
                 this, null);
     }
     
@@ -53,7 +53,7 @@ public class DataSourceObjectFactory implements BundleActivator, ObjectFactory {
 
     private void retrieveLogService() {
         ServiceReference logServiceReference =
-            bundleContext.getServiceReference(LogService.class.toString());
+            bundleContext.getServiceReference(LogService.class.getName());
         logService = (LogService) 
             bundleContext.getService(logServiceReference);
     }

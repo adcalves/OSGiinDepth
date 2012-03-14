@@ -36,14 +36,14 @@ public class SabNamespaceHandler implements NamespaceHandler {
                 new MutableBeanMetadata();
 
             factoryMetadata.setScope("singleton");
-            factoryMetadata.setClassName(SubscriberFactory.class.toString());
+            factoryMetadata.setClassName(SubscriberFactory.class.getName());
             factoryMetadata.setInitMethod("init");
             factoryMetadata.setDestroyMethod("destroy");
 
             factoryMetadata.addProperty("id", 
                     new ValueMetadata() {
                 public String getType() {
-                    return String.class.toString();
+                    return String.class.getName();
                 }
                 public String getStringValue() {
                     return id;
@@ -53,7 +53,7 @@ public class SabNamespaceHandler implements NamespaceHandler {
             factoryMetadata.addProperty("topic", 
                     new ValueMetadata() {
                 public String getType() {
-                    return String.class.toString();
+                    return String.class.getName();
                 }
                 public String getStringValue() {
                     return topic;

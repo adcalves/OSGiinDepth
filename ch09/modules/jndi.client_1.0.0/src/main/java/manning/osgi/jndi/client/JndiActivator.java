@@ -88,7 +88,7 @@ public class JndiActivator implements BundleActivator {
     void jndiInOsgi() throws NamingException {
 
         ServiceReference ref = 
-            bundleContext.getServiceReference(JNDIContextManager.class.toString());
+            bundleContext.getServiceReference(JNDIContextManager.class.getName());
 
         JNDIContextManager ctxtMgr =
             (JNDIContextManager) bundleContext.getService(ref);
@@ -118,7 +118,7 @@ public class JndiActivator implements BundleActivator {
         Object refFSContextFactoryImpl = null; // FIXME Provider!
 
         bundleContext.registerService(
-                new String [] {InitialContextFactory.class.toString(), 
+                new String [] {InitialContextFactory.class.getName(), 
                         "com.sun.jndi.fscontext.RefFSContextFactory"}, 
                         refFSContextFactoryImpl, 
                         null);
@@ -132,7 +132,7 @@ public class JndiActivator implements BundleActivator {
         "com.sun.jndi.fscontext.RefFSContextFactory");
         InitialContext manningContext = new InitialContext(env);
 
-        manningContext.bind("Books", new Reference(File.class.toString(), 
+        manningContext.bind("Books", new Reference(File.class.getName(), 
                 "com.manning.FSObjectFactory", null));
     }
 }

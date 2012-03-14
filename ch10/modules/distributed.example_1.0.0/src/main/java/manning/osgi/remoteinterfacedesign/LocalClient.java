@@ -12,7 +12,7 @@ public class LocalClient implements BundleActivator {
         // TODO Auto-generated method stub
         
         ServiceReference servRef =
-            bundleContext.getServiceReference(RemoteCustomerRegistry.class.toString());
+            bundleContext.getServiceReference(RemoteCustomerRegistry.class.getName());
 
         if (servRef != null) {
             RemoteCustomerRegistry registry =

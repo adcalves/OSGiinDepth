@@ -40,7 +40,7 @@ public class SubscriberFactory {
 
         serviceReference =
             bundleContext.registerService(
-                EventHandler.class.toString(), target, properties);        
+                EventHandler.class.getName(), target, properties);        
     }
     
     public void destroy() {

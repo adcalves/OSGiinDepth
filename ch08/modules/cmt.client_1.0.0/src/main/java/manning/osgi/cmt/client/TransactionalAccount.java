@@ -30,7 +30,7 @@ public class TransactionalAccount implements BundleActivator {
     public void start(BundleContext bundleContext) throws Exception {
         ServiceReference serviceReference =
             bundleContext.getServiceReference(
-                    UserTransaction.class.toString());
+                    UserTransaction.class.getName());
 
         ut = 
             (UserTransaction) bundleContext.getService(serviceReference);

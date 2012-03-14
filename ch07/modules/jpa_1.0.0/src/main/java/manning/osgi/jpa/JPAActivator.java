@@ -17,7 +17,7 @@ public class JPAActivator implements BundleActivator {
 
         ServiceReference [] serviceReferences =
             context.getServiceReferences(
-                    EntityManagerFactory.class.toString(), 
+                    EntityManagerFactory.class.getName(), 
             "(osgi.unit.name=LoginEvent)");
 
         if (serviceReferences != null) {

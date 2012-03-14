@@ -43,7 +43,7 @@ public class SubscriberExtenderActivator implements BundleActivator, BundleListe
                                 subInfo.get(1));
 
                         event.getBundle().getBundleContext().registerService(
-                                EventHandler.class.toString(), handler, properties);
+                                EventHandler.class.getName(), handler, properties);
                     }
                 }
             } 
