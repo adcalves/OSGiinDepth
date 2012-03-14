@@ -12,6 +12,15 @@
     
     <!-- Listing 7.4, 7.5, 7.6 -->
     <bundle-up name="jpa_1.0.0" />
+    
+    <!-- Make sure EclipseLink libraries are in the class-path by placing them
+    	in felix's framework bundle directory
+    	-->
+    <copy todir="modules/eclipselink.jpa_1.0.0/target/META-INF" >
+      <fileset dir="modules/eclipselink.jpa_1.0.0/src/main/resources/META-INF/" includes="MANIFEST.MF, persistence.xml"/>
+    </copy>
+
+    <bundle-up name="eclipselink.jpa_1.0.0" />
   </target>
 
 </project>

@@ -1,0 +1,26 @@
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+		http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <persistence-unit name="LoginEvent">
+        <class>manning.osgi.jpa.LoginEvent</class>        
+          <properties>
+            <property name="javax.persistence.jdbc.driver"
+ 				value="org.apache.derby.jdbc.EmbeddedDriver"/>
+            <property name="javax.persistence.jdbc.url"	
+ 				value="jdbc:derby:derbyDB;create=true"/>
+ 			
+ 			<!-- <property name="eclipselink.target-database" value="Derby"/>
+            <property name="eclipselink.jdbc.read-connections.min" value="1"/>
+            <property name="eclipselink.jdbc.write-connections.min" value="1"/>
+            <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+            <property name="eclipselink.logging.level" value="FINE" />
+            <property name="eclipselink.logging.thread" value="false" />
+            <property name="eclipselink.logging.session" value="false" />
+            <property name="eclipselink.logging.exceptions" value="true" />
+            <property name="eclipselink.logging.timestamp" value="false"/>-->     
+        </properties>
+    </persistence-unit>
+</persistence>

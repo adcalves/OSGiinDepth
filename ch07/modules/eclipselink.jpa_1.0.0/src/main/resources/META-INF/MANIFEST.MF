@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: eclipselink.jpa
+Bundle-Version: 1.0.0
+JPA-PersistenceUnits: LoginEvent
+Import-Package: javax.persistence;version="1.1.0";jpa="2.0",
+ org.osgi.framework, org.apache.derby.jdbc
+Bundle-Activator: manning.osgi.jpa.JPAActivator
+
+

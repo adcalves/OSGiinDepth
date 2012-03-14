@@ -17,12 +17,18 @@ public class JPAActivator implements BundleActivator {
 
         ServiceReference [] serviceReferences =
             context.getServiceReferences(
-                    EntityManagerFactory.class.toString(), 
+                    EntityManagerFactory.class.getName(), 
             "(osgi.unit.name=LoginEvent)");
 
         if (serviceReferences != null) {
             EntityManagerFactory emf = 
                 (EntityManagerFactory) context.getService(serviceReferences[0]);
+            
+            System.out.println("Creating Entity Manager Factory using an OSGi service.");
+            
+            // Non-standard Eclipse-way for creating a EMF.
+//            EntityManagerFactory emf = 
+//                Persistence.createEntityManagerFactory("LoginEvent");
 
             EntityManager em = emf.createEntityManager();
 
@@ -39,6 +45,8 @@ public class JPAActivator implements BundleActivator {
     private void persistLoginEvent(EntityManager em, LoginEvent loginEvent) {
         em.getTransaction().begin();
 
+        System.out.println("Persisting login-event");
+        
         em.persist(loginEvent);
 
         em.getTransaction().commit();
@@ -48,6 +56,8 @@ public class JPAActivator implements BundleActivator {
         em.getTransaction().begin();
 
         LoginEvent loginEvent = em.find(LoginEvent.class, id);
+        
+        System.out.println("Retrieved login-event = " + loginEvent);
 
         em.getTransaction().commit();
         
